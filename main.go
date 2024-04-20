@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import "log"
 
 func main() {
-	fmt.Println("we gucci!")
+	server := NewServer()
+	if err := server.Listen(); err != nil {
+		log.Fatal(err)
+	}
 }

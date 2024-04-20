@@ -1,5 +1,5 @@
 build:
-	@go build -o bin/kafgo main.go
+	@go build -o bin/kafgo *.go
 
 run: build
 	@./bin/kafgo
